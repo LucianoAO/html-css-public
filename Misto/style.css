@@ -1,8 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+:root {
+    --cor0: #b700ff4b;
+    --cor1:#ff00ff55;
+    --cor2: #7B0DFF;
+    --cor3: #E80C7A;
+    --cor4:#d2c4ca;
+    --cor5:#063d1e;
 }
 
 body {
@@ -16,5 +28,50 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to right, );
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0) );
+    position: relative;
+}
+
+div#kid {
+    height: 95%;
+    width: 700px;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.398);
+    background-image: linear-gradient(40deg, var(--cor2), var(--cor3));
+}
+
+img#kk {
+    border-radius: 50%;
+    position: absolute;
+    top: 9%;
+    left: 34%;
+    width: 12vw;
+}
+
+header > p#gordo {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    position: absolute;
+    top: 32%;
+    left: 36%;
+    font-size: 60px;
+}
+
+header > p:hover#gordo {
+    text-shadow: 3px 2px 20px #7a0dff69;
+    transition-duration: 1s;
+}
+
+p#r {
+    color: var(--cor4);
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    font-size: 40px;
+    font-family: 'Sarpanch', sans-serif;
 }
