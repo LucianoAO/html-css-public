@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(imagens/ceu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blueviolet;
+
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, );
+}
