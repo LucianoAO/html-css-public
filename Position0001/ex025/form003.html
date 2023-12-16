@@ -6,14 +6,19 @@
     <title>Formulário</title>
 </head>
 <body>
+    <h1>Formulário de Cadastro</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome</label>
             <input type="text" name="nome" id="inome" required maxlength="30" minlength="3" placeholder="Nome Completo" autocomplete="name">
         </p>
         <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" placeholder="Mínimo de 8 caracteres" required autocomplete="new-password" aria-describedby="senhaHelp">
+        </p>
+        <p>
             <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" size="2" placeholder="0 a 10">
+            <input type="number" name="media" id="imedia" min="0" max="10" size="2" placeholder="0 a 10" required>
         </p>
         <p>
             <label for="imes">Período Letivo</label>

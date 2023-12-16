@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --font1: 'Handlee', cursive;
+}
+
+p {
+    padding: 10px;
+}
+
+legend {
+    font-family: var(--font1);
+}
+
+fieldset {
+    background-color: rgba(128, 128, 128, 0.039);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.354);
+    border: 2px solid rgba(35, 63, 176, 0.574);
+    margin: 10px;
+    padding: 10px;
+    transition-duration: 1s;
+}
+
+fieldset:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.354);
+    background-color: white;
+    border: 2px solid rgba(35, 157, 176, 0.574);
+}
+

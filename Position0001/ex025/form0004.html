@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend><b>Dados Pessoais</b></legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail" aria-label="E-Mail">E-Mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\d{10,11}$">
+                </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar" aria-label="Enviar Formulário">
+            <input type="reset" value="Limpar" aria-label="Limpar Formulário">
+        </p>
+    </form>
 </body>
 </html>
