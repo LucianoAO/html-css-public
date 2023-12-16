@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 
 * {
     padding: 0px;
@@ -6,7 +8,7 @@
 }
 
 :root {
-    --font1: 'Handlee', cursive;
+    --font1: 'Permanent Marker', cursive;
 }
 
 p {
@@ -14,6 +16,8 @@ p {
 }
 
 legend {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
     font-family: var(--font1);
 }
 
@@ -26,9 +30,30 @@ fieldset {
     transition-duration: 1s;
 }
 
+
 fieldset:hover {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.354);
     background-color: white;
     border: 2px solid rgba(35, 157, 176, 0.574);
 }
 
+input.painel {
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    border: 1px solid black;
+    font-family: var(--font1);
+    transition: 0.5s;
+    border-radius: 10%;
+}
+
+input.painel:hover {
+    box-shadow: 0 0 3px rgba(35, 157, 176, 0.3);
+    color: rgb(2, 16, 18);
+    background-color: rgba(177, 223, 239, 0.522);
+    border: 1px solid rgb(35, 157, 176);
+}
+
+input.painel:active {
+    transition: 0.1s;
+    text-shadow: 1px 1px 2px rgba(35, 157, 176, 0.449);
+}
