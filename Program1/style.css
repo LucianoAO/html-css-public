@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
-
-
-
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +18,15 @@ body {
 
 section.type1 {
     background-color: #201E1F;
+    min-width: 100%;
+    min-height: 98vh;
+}
+
+section.gray {
+    background-color: #282828;
     width: 100%;
-    height: 100vh;
+    min-height: 60vh;
+    text-align: center;
 }
 
 img#mulher {
@@ -33,11 +38,20 @@ img#mulher {
     height: auto;
 }
 
+img.icone {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+}
+
 div#laranjabox {
     margin: auto;
     padding-top: 5px;
     background-color: #F05632;
-    width: 400px;
+    max-width: 30em;
 }
 
 strong#pao {
@@ -45,7 +59,7 @@ strong#pao {
 }
 
 h1#titulo {
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: center;
     font-family: var(--destaque);
     color: white;
@@ -55,12 +69,33 @@ h1#titulo {
 }
 
 p {
-    max-width: 1000px;
+    max-width: 1140px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 1% 5%;
     margin: auto;
     font-weight: normal;
     color: white;
     font-family: var(--destaque);
+}
+
+section > h2 {
+    padding-top: 40px;
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 31px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+div.cxbranca {
+    position: relative;
+    text-align: center;
+    margin: 20px 30px;
+    border-radius: 5%;
+    display: inline-block;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.71);
+    width: 13vw;
+    height: 35vh;
 }
