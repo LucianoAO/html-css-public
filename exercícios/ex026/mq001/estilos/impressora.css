@@ -10,7 +10,7 @@
 
 html {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
@@ -23,6 +23,6 @@ menu {
 }
 
 
-menu::after {
-    content: "Esse artigo foi impresso através de ww.cursoemvideo.com e luciano!";
+article::after {
+    content: "Esse artigo foi impresso através de www.cursoemvideo.com e luciano!";
 }
