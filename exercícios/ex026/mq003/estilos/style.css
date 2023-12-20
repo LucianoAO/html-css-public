@@ -3,6 +3,7 @@
         /* Configuração Geral */
 
         @media all {
+            
              * {
             padding: 0px;
             margin: 0px;
@@ -22,6 +23,7 @@
             text-shadow: 2px 2px 0px #192aa6;
             padding: 10px;
         }
+         
         }
 
        
