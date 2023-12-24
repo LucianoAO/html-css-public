@@ -9,7 +9,68 @@ Para dispositivos móveis – 320px — 480px
 iPads e tablets – 481px — 768px
 Laptops e telas pequenas – 769px — 1024px
 Telas e desktops grandes – 1025px — 1200px
-TV e telas extragrandes – 1.201 pixels e mais
+TV e telas extragrandes – 1.201 pixels e mais */
+
+    @media print {
+        body {
+            background-image: url(../imagens/back-print.jpg);
+        }
+
+        main {
+            border: 2px solid black;
+            width: 90vw ;
+        }
+
+        main > h1 {
+            text-shadow: none;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #pc,#tablet,#tv,#phone {display: none;}
+        #print {display: block;}
+    }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    /* Estilos para telas maiores ou iguais a 768px */
+    /* Adicione seus estilos aqui */
+        body {
+            background-image: url(../imagens/back-tablet.jpg);
+        }
+
+       #print,#pc,#tv,#phone {display: none;}
+        #tablet {display: block;}
+  }
+  
 
 
-*/
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1024px) {
+    /* Estilos para telas maiores ou iguais a 992px */
+    /* Adicione seus estilos aqui */
+
+        body {
+            background-image: url(../imagens/back-pc.jpg);
+        }
+
+        #print,#tablet,#tv,#phone {display: none;}
+        #pc {display: block;}
+
+  }
+  
+
+
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1201px) {
+    /* Estilos para telas maiores ou iguais a 1200px */
+    /* Adicione seus estilos aqui */
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #print,#tablet,#pc,#phone {display: none;}
+    #tv {display: block;}
+  }
