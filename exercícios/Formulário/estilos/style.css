@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.242);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div.content {
+    box-sizing: border-box;
+    border: 1px solid #e062ff; /* Adiciona uma borda preta de 1px */
+    width: 80vw;
+    height: 80vh; /* ou ajuste conforme necessário */
+    display: flex;
+    flex-direction: column; /* Ajustado para coluna para empilhar main e aside */
+}
+
+main, aside {
+    background-color: #F6F6F6;
+    padding: 10px; 
+    flex-grow: 1; /* Faz com que main e aside cresçam para ocupar todo o espaço disponível */
+}
+
+div.form-sp {
+    margin-bottom: 4vw;
+}
+
+input.input-cad {
+    min-width: 97%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 5px;
+}
+
+input#ilogado {
+    background-color: gray;
+}
+
+input#submit {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+aside {
+    background-color: #E1EAEB;
+}
+
+h1 {
+    color: #F2BFFF;
+    text-align: center;
+    text-shadow: 2px 2px 1px #F2BFFF;
+    transition-duration: .5s;
+}
+
+h1:hover {
+    text-shadow: 2px 2px 4px #F2BFFF;
+} 
+
+p#p1, a#cad {
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
