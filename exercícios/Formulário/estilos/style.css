@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+:root {
+    --fonte1: 'RocknRoll One', sans-serif;
+    --fonte2: 'Lora', serif;
+    --fonte3: 'Nanum Gothic', sans-serif;
+}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -9,35 +19,74 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: linear-gradient(to bottom, #897EDE 60%, #bf66db);
 }
 
 div.content {
     box-sizing: border-box;
-    border: 0.1em solid #e062ff;
     display: flex;
     flex-direction: column;
     margin: auto;
     max-width: 30em; /* Ajustei para em */
     width: 90%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.419);
+    border-radius: 20px 20px 20px 20px;
+}
+
+main {
+    border-radius: 20px 20px 0px 0px;
 }
 
 main, aside {
-    background-color: #F6F6F6;
+    background-color: #2c2c2cae;
     padding: 0.5em;
+
 }
 
 div.form-sp {
     margin-bottom: 1em; /* Ajustei para em */
+    text-align: center;
+}
+
+label {
+    color: #ffff;
+}
+
+label.sara {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.0;
+}
+
+
+input.input-cad::placeholder {
+    color: white;
+    font-family: var(--fonte1);
+    opacity: 60%;
 }
 
 input.input-cad {
-    min-width: 10em;
+    background-color: #2c2c2c90;
+    min-width: 25em;
     height: 2.5em;
     padding: 1em;           
-    border: 0.1em solid rgb(180, 179, 179);
-    border-radius: 0.6em;
+    border: none;
+    border-radius: 10px;
 }
 
+div#logado {
+    text-align: center;
+}
+
+label#vitinho {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+input[type="checkbox"] {
+    border-color: blue;
+    background-color: red;
+}
+ 
 input[type="submit"] {
     padding: 0.5em;
     border-radius: 1.5em;
@@ -47,35 +96,44 @@ input[type="submit"] {
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
+    border: 1px solid transparent;
+    background: linear-gradient(#2c2c2cc7, #2c2c2cc7) padding-box,
+    linear-gradient(to right, #897FDF, #DF7FCF) border-box;
+    cursor: pointer;
+    background-color: #2c2c2cc7;
+    color: white;
+    font-family: var(--fonte3);
+    transition-duration: 1s;
+}
+
+
+input[type="submit"]:hover {
+    transition-duration: 1s;
+    border: none;
+    background-image: linear-gradient(to right, #9658a9, #5b6dae);
+    color: white;
 }
 
 aside {
-    background-color: #E1EAEB;
+    text-align: center;
+    background-color: white;
+    transition-duration: 0.5s;
+    background-image: linear-gradient(to left, #564bb4, #a84b99);
+    border-radius: 0px 0px 20px 20px;
+}
+
+a#cad {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 900;
+    font-family: var(--fonte1);
+    font-size: 1.3em;
 }
 
 h1 {
-    color: #F2BFFF;
+    color: #C8A2C8;
     text-align: center;
-    text-shadow: 0.2em 0.2em 0.1em #F2BFFF;
-    transition-duration: 0.5s;
-}
-
-h1:hover {
-    text-shadow: 0.2em 0.2em 0.4em #F2BFFF;
-} 
-
-p#p1, a#cad {
-    display: inline-block;
-}
-
-/* Media queries para ajustes em telas menores */
-@media screen and (max-width: 600px) {
-    div.content {
-        width: 90%;
-    }
-
-    input.input-cad {
-        min-width: 25em;
-        max-width: 60em;
-    }
+    text-shadow: 1px 1px 6px #eda3ff;
+    font-size: 2.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

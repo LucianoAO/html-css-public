@@ -12,16 +12,16 @@
             <h1 id="h1-log">Login</h1>
             <form action="cadastro.php" autocomplete="on">
                 <div class="form-sp">
-                    <label for="iemail">Seu e-mail</label> <br>
-                    <input type="email" name="email" id="iemail" placeholder="Digite seu Email!" autocomplete="email" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" class="input-cad">
+                    <label for="iemail" class="sara">E-mail</label> <br>
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu Email" autocomplete="email" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" class="input-cad">
                 </div>
                 <div class="form-sp">
-                    <label for="senha">Sua senha</label> <br>
+                    <label for="isenha" class="sara">Senha</label> <br>
                     <input type="password" name="senha" id="isenha" placeholder="10 Digitos" autocomplete="current-password" minlength="6" maxlength="15" pattern="" class="input-cad">
                 </div>
                 <div id="logado">
                     <input type="checkbox" name="logado" id="ilogado">
-                    <label for="ilogado">Manter-me logado</label>
+                    <label for="ilogado" id="vitinho">Manter-me logado</label>
                 </div>
                 <div id="envio">
                     <input type="submit" value="Logar" id="submit">
@@ -29,7 +29,7 @@
             </form>
         </main>
         <aside>
-            <p id="p1">Ainda não tem conta?</p><a href="https://web.whatsapp.com" id="cad">Cadastre-se</a>
+            <a href="https://web.whatsapp.com" id="cad">Cadastre-se</a>
         </aside>
     </div>
 </body>
