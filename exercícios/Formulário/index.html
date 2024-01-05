@@ -10,15 +10,12 @@
     <div class="content">
         <main>
             <h1 id="h1-log">Login</h1>
-            <form action="cadastro.php" autocomplete="on">
+            <form action="cadastro.php" autocomplete="on" method="post">
                 <div class="form-sp">
                     <label for="iemail" class="sara">E-mail</label> <br>
                     <input type="email" name="email" id="iemail" placeholder="Digite seu Email" autocomplete="email" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" class="input-cad">
                 </div>
-                <div class="form-sp">
-                    <label for="isenha" class="sara">Senha</label> <br>
-                    <input type="password" name="senha" id="isenha" placeholder="10 Digitos" autocomplete="current-password" minlength="6" maxlength="15" pattern="" class="input-cad">
-                </div>
+
                 <div id="logado">
                     <input type="checkbox" name="logado" id="ilogado">
                     <label for="ilogado" id="vitinho">Manter-me logado</label>
