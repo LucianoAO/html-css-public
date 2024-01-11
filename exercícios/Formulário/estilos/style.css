@@ -24,6 +24,7 @@ body {
     height: 100vh;
     margin: 0;
     background-image: linear-gradient(to top, #897EDE 60%, #bf66db);
+    cursor: url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) , auto;
 }
 
 div.content {
@@ -54,11 +55,16 @@ div.form-sp {
 
 label { 
     color: #ffff;
+    cursor: url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) , auto;
 }
 
 label.sara {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.0;
+}
+
+input {
+    cursor: url(../cursor/text.png), auto;
 }
 
 
@@ -78,13 +84,17 @@ input.input-cad {
     color: white;
 }
 
-div#logado {
+input.input-cad {
+    cursor: url(../cursor/text.png);
+}
+
+input#ilogado, div#logado {
     text-align: center;
+    cursor: url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) , auto;
 }
 
 label#vitinho {
     font-family: var(--fonte5);
-    
 }
  
 input[type="submit"] {
@@ -103,7 +113,9 @@ input[type="submit"] {
     background-color: #2c2c2cc7;
     color: white;
     font-family: var(--fonte3);
+    cursor: url(https://cdn.custom-cursor.com/db/15283/32/color-pixels-medium-purple-pointer.png), pointer;
     transition-duration: 1s;
+    
 }
 
 
@@ -123,6 +135,7 @@ aside {
 }
 
 a#cad {
+    cursor: url(https://cdn.custom-cursor.com/db/15283/32/color-pixels-medium-purple-pointer.png) , pointer !important;
     text-decoration: none;
     color: #ffff;
     font-weight: 900;
