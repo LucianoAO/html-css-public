@@ -1,214 +1,204 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+@import "https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Lora&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Figtree&display=swap";
 
 :root {
-    --fonte1: 'RocknRoll One', sans-serif;
-    --fonte2: 'Lora', serif;
-    --fonte3: 'Nanum Gothic', sans-serif;
-    --fonte4: 'Playfair Display', serif;
-    --fonte5: 'Figtree', sans-serif;
+--fonte1:'RocknRoll One',sans-serif;
+--fonte2:Lora,serif;
+--fonte3:'Nanum Gothic',sans-serif;
+--fonte4:'Playfair Display',serif;
+--fonte5:Figtree,sans-serif
 }
 
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(128, 128, 128, 0.242);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: linear-gradient(to top, #897EDE 60%, #bf66db);
-    cursor: url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) , auto;
+font-family:Arial,Helvetica,sans-serif;
+background-color:#8080803e;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+background-image:linear-gradient(to top,#897EDE 60%,#bf66db);
+cursor:url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) ,auto
 }
 
 div.content {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 30em; /* Ajustei para em */
-    width: 90%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.419);
-    border-radius: 20px 20px 20px 20px;
+box-sizing:border-box;
+display:flex;
+flex-direction:column;
+margin:auto;
+max-width:30em;
+width:90%;
+box-shadow:2px 2px 10px #0000006b;
+border-radius:20px 20px 20px 20px
 }
 
 main {
-    border-radius: 20px 20px 0px 0px;
+border-radius:20px 20px 0 0
 }
 
-main, aside {
-    background-color: #2c2c2ce3;
-    padding: 0.5em;
-
+main,aside {
+background-color:#2c2c2ce3;
+padding:.5em
 }
 
 div.form-sp {
-    margin-bottom: 1em; /* Ajustei para em */
-    text-align: center;
+margin-bottom:1em;
+text-align:center
 }
 
-label { 
-    color: #ffff;
-    cursor: url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) , auto;
+label {
+color:#ffff;
+cursor:url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) ,auto
 }
 
 label.sara {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2.0;
+font-family:Arial,Helvetica,sans-serif;
+line-height:2
 }
 
 input {
-    cursor: url(../cursor/text.png), auto;
+cursor:url(../cursor/text.png),auto
 }
-
 
 input.input-cad::placeholder {
-    color: white;
-    font-family: var(--fonte1);
-    opacity: 80%;
+color:#fff;
+font-family:var(--fonte1);
+opacity:80%
 }
 
 input.input-cad {
-    background-color: #2c2c2c90;
-    min-width: 15em;
-    height: 2.5em;
-    padding: 1em;           
-    border: none;
-    border-radius: 10px;
-    color: white;
+background-color:#2c2c2c90;
+min-width:15em;
+height:2.5em;
+padding:1em;
+border:none;
+border-radius:10px;
+color:#fff;
+cursor:url(../cursor/text.png)
 }
 
-input.input-cad {
-    cursor: url(../cursor/text.png);
-}
-
-input#ilogado, div#logado {
-    text-align: center;
-    cursor: url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) , auto;
+input#ilogado,div#logado {
+text-align:center;
+cursor:url(https://cdn.custom-cursor.com/db/15284/32/color-pixels-medium-purple-cursor.png) ,auto
 }
 
 label#vitinho {
-    font-family: var(--fonte5);
-}
- 
-input[type="submit"] {
-    padding: 0.5em;
-    border-radius: 1.5em;
-    width: 19em;
-    height: 3em;
-    display: block;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border: 1px solid transparent;
-    background: linear-gradient(#2c2c2cc7, #2c2c2cc7) padding-box,
-    linear-gradient(to right, #897FDF, #DF7FCF) border-box;
-    cursor: pointer;
-    background-color: #2c2c2cc7;
-    color: white;
-    font-family: var(--fonte3);
-    cursor: url(https://cdn.custom-cursor.com/db/15283/32/color-pixels-medium-purple-pointer.png), pointer;
-    transition-duration: 1s;
-    
+font-family:var(--fonte5)
 }
 
+input[type="submit"] {
+padding:.5em;
+border-radius:1.5em;
+width:19em;
+height:3em;
+display:block;
+margin:auto;
+margin-top:1em;
+margin-bottom:1em;
+border:1px solid transparent;
+background:linear-gradient(#2c2c2cc7,#2c2c2cc7) padding-box,linear-gradient(to right,#897FDF,#DF7FCF) border-box;
+cursor:pointer;
+background-color:#2c2c2cc7;
+color:#fff;
+font-family:var(--fonte3);
+cursor:url(https://cdn.custom-cursor.com/db/15283/32/color-pixels-medium-purple-pointer.png),pointer;
+transition-duration:1s
+}
 
 input[type="submit"]:hover {
-    transition-duration: 1s;
-    border: none;
-    background-image: linear-gradient(to right, #9658a9, #5b6dae);
-    color: white;
+transition-duration:1s;
+border:none;
+background-image:linear-gradient(to right,#9658a9,#5b6dae);
+color:#fff
 }
 
 aside {
-    text-align: center;
-    background-color: white;
-    transition-duration: 0.5s;
-    background-image: linear-gradient(to left, #564bb4, #a84b99);
-    border-radius: 0px 0px 20px 20px;
+text-align:center;
+background-color:#fff;
+transition-duration:.5s;
+background-image:linear-gradient(to left,#564bb4,#a84b99);
+border-radius:0 0 20px 20px
 }
 
 a#cad {
-    cursor: url(https://cdn.custom-cursor.com/db/15283/32/color-pixels-medium-purple-pointer.png) , pointer !important;
-    text-decoration: none;
-    color: #ffff;
-    font-weight: 900;
-    font-family: var(--fonte1);
-    font-size: 1.3em;
+cursor:url(https://cdn.custom-cursor.com/db/15283/32/color-pixels-medium-purple-pointer.png) ,pointer!important;
+text-decoration:none;
+color:#ffff;
+font-weight:900;
+font-family:var(--fonte1);
+font-size:1.3em
 }
 
 h1 {
-    color: #C8A2C8;
-    text-align: center;
-    text-shadow: 1px 1px 5px #924CE0;
-    font-size: 2.3em;
-    font-family: var(--fonte4);
+color:#C8A2C8;
+text-align:center;
+text-shadow:1px 1px 5px #924CE0;
+font-size:2.3em;
+font-family:var(--fonte4)
 }
 
 @media screen and (min-width: 350px) {
-    input.input-cad,
-    input[type="submit"] {
-        width: 21em;
-    }
+input.input-cad,input[type="submit"] {
+width:21em
+}
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        background-image: linear-gradient(to top, #897EDE 60%, #bf66db);
-    }
+body {
+background-image:linear-gradient(to top,#897EDE 60%,#bf66db)
+}
 
-    div.content {
-        max-width: 100%;
-    }
+div.content {
+max-width:100%
+}
 
-    main {
-        border-radius: 20px 20px 0px 0px;
-    }
+main {
+border-radius:20px 20px 0 0
+}
 
-    input.input-cad,
-    input[type="submit"] {
-        width: 80%;
-    }
+input.input-cad,input[type="submit"] {
+width:80%
+}
 
-    aside {
-        border-radius: 0px 0px 20px 20px;
-    }
+aside {
+border-radius:0 0 20px 20px
+}
 }
 
 @media screen and (min-width: 992px) {
-    body {
-        background-image: linear-gradient(to top, #897EDE 60%, #bf66db);
-    }
+body {
+background-image:linear-gradient(to top,#897EDE 60%,#bf66db)
+}
 
-    div.content {
-        max-width: 90%;
-    }
+div.content {
+max-width:90%
+}
 
-    input.input-cad,
-    input[type="submit"] {
-        width: 80%;
-    }
+input.input-cad,input[type="submit"] {
+width:80%
+}
 }
 
 @media screen and (min-width: 1200px) {
-    div.content {
-        max-width: 40%;
-    }
-
-    main, aside {
-        max-width: 100%;
-    }
-
-    input.input-cad,
-    input[type="submit"] {
-        width: 90%; /* Full width for better responsiveness */
-    }
+div.content {
+max-width:40%
 }
 
+main,aside {
+max-width:100%
+}
 
+input.input-cad,input[type="submit"] {
+width:90%
+}
+}
