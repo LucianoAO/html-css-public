@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 320px) {
+    div.flex {
+        height: 45%;
+    }
+
+    div.card {
+        height: 350px;
+    }
+}
