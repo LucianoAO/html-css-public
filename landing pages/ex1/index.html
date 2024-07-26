@@ -10,66 +10,65 @@
 <body>
     <header>
         <nav>
-            <span>ballecoffe</span>
-
-            <ul>
+            <span class="logo">ballecoffe</span>
+            <ul class="menu">
                 <li><a href="">Home</a></li>
                 <li><a href="">Receitas</a></li>
                 <li><a href="">Novidades</a></li>
                 <li><a href="">Melhor avaliadas</a></li>
             </ul>
 
-            <a href="">Github</a>
+            <a href="" class="github">Github</a>
         </nav>
     </header>
     <main>
-        <section>
-            <header>
-                <span>novidade</span>
-                <h1>Encontre a receita perfeita!</h1>
-                <hr>
-                <h2>Explore dezenas de variações da bebida favorita entre os devs ao redor do mundo!</h2>
-            </header>
-            <div>
-                <figure>
-                    <img src="img/image 10.png" alt="">
-                    <img src="img/image 10 (1).png" alt="">
-                    <img src="img/image 11.png" alt="">
-                    <img src="img/image 12.png" alt="">
-                    <img src="img/image 12 (1).png" alt="">
-                    <img src="img/image 13.png" alt="">
-                    <img src="img/image 14.png" alt="">
-                    <img src="img/image 14 (1).png" alt="">
-                    <img src="img/image 15.png" alt="">
-                    <img src="img/image 16.png" alt="">
-                    <img src="img/image 17.png" alt="">
-                    <img src="img/image 18.png" alt="">
-                </figure>
-            </div>
-        </section>
-        <section>
-            <button>
-                <img src="img/Button.svg" alt="">
+        <div class="principal">
+            <section class="hero">
+                <header class="hero-conteudo">
+                    <span class="destaque marrom">novidade</span>
+                    <h1>Encontre a receita perfeita!</h1>
+                    <hr>
+                    <h2 class="hero=subtitulo">Explore dezenas de variações da bebida favorita entre os devs ao redor do mundo!</h2>
+                </header>
+                <div class="hero-imagens-container">
+                    <figure><img src="img/image 10.png" alt=""></figure>
+                    <figure><img src="img/image 10 (1).png" alt=""></figure>
+                    <figure><img src="img/image 11.png" alt=""></figure>
+                    <figure><img src="img/image 12.png" alt=""></figure>
+                    <figure><img src="img/image 12 (1).png" alt=""></figure>
+                    <figure><img src="img/image 13.png" alt=""></figure>
+                    <figure><img src="img/image 14.png" alt=""></figure>
+                    <figure><img src="img/image 14 (1).png" alt=""></figure>
+                    <figure><img src="img/image 15.png" alt=""></figure>
+                    <figure><img src="img/image 16.png" alt=""></figure>
+                    <figure><img src="img/image 17.png" alt=""></figure>
+                    <figure><img src="img/image 18.png" alt=""></figure>
+                </div>
+            </section>
+        </div>
+        <section class="botao-container">
+            <button type="button ">
+                <img src="img/chevrons-down.svg" alt="">
             </button>
         </section>
-        <section>
-            <header>
-                <span>receitas</span>
-                <h2>Confira as últimas receitas!</h2>
-                <p>Dê uma olhada nas receitas mais amadas!</p>
-                <div>
-                    <div>
-                        <header>
-                            <div>
-                                <span>Em alta</span>
-                                <h3>Cappuccino</h3>
+        <section class="receitas">
+            <header class="receitas-cabecalho">
+                <span class="destaque marrom">receitas</span>
+                <h2 class="receitas-titulo">Confira as últimas receitas!</h2>
+                <p class="receitas-subtitulo">Dê uma olhada nas receitas mais amadas!</p>
+                <div class="receitas-card-container">
+                    <div class="receitas-card">
+                        <header class="receitas-card-cabecalho">
+                            <div class="receitas-card-cabecalho-detalhes">
+                                <span class="destaque amarelo">Em alta</span>
+                                <h3 class="receita-titulo">Cappuccino</h3>
                             </div>
-                            <p>Extraordinário 4/4</p>
+                            <p class="receita-avaliacao">Extraordinário 4/4</p>
                         </header>
-                        <p>Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
-                        <div>
+                        <p class="receita-descricao">Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+                        <div class="receita-autor">
                             <img src="https://avatars.githubusercontent.com/u/54322854?v=4 " alt="">
-                            <span>Rafaella Ballerini</span>
+                            <span class="receita-autor-nome">Rafaella Ballerini</span>
                         </div>
                     </div>
                 </div>
@@ -77,8 +76,8 @@
         </section>
     </main>
     <footer>
-        <p>Copyright &lt;CODEFEE/&gt; 2023</p>
-        <p>Feito com muito ❤ e café por Rafaella Ballerini</p>
+        <p class="footer-copy">Copyright &lt;CODEFEE/&gt; 2023</p>
+        <p class="footer-autor">Feito com muito ❤ e café por Rafaella Ballerini</p>
     </footer>
 
 </body>
