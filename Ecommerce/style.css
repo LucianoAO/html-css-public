@@ -116,6 +116,12 @@ div#menu {
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 35px;
+    transition: all .55s ease;
+}
+
+.home-text h3:hover {
+    transform: translateY(-10px);
+    transition: all .55s ease
 }
 
 .home-img img{
@@ -188,6 +194,13 @@ div#menu {
 
 .row2:hover {
     transform: translateY(-8px);
+}
+
+
+i.blue:hover{
+    text-decoration: none;
+    color: var(--main-color);
+    transform: translateY(5px);
 }
 
 .row3 {
