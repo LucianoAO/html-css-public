@@ -13,7 +13,7 @@ menu.onclick = () => {
 }
 
 function abecedario () {
-    wire.style.color = "#34e7f8"
+    wire.style.color = "#6d28d9"
 }
 
 function abecedario2() {
